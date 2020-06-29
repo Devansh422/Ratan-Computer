@@ -884,40 +884,43 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	#wrapper{
   position: relative;
   height: 100%;
+  
 }
+.product1,
 .product2,.product3,
 .product5,.product6,
 .product4,.product7,
 .product8,.product9{
   position: relative;
 }
- .product2,.product3{
+.product1,.product2,.product3{
   top:0px;
 }
-.product5,.product6{
+.product4,.product5,.product6{
 	top:0px;
 }
-.product8,.product9{
+.product7,.product8,.product9{
 	top:0px;
 }
 .product2{
-	left:0px
+	left:0px;
 }
 .product3{
-	left:0px
+	left:0px;
 }
 .product5{
-	left:0px
+	left:0px;
 }
 .product6{
-	left:0px
+	left:0px;
 }
 .product8{
-	left:0px
+	left:0px;
 }
 .product9{
-	left:0px
+	left:0px;
 } 
+
 
 }
 
