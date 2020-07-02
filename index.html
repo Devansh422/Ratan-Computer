@@ -1,352 +1,467 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" href="style.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="swiper.min.css">
-
-			<title>Ratan Computers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
+  <title>Ratan Computers</title>
 </head>
 
 <body>
-   
-<div id="side">				
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="swiper-slide content">
-            <div class="menu-button">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+
+    <div id="side">				
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide content">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<script src="swiper.min.js"></script>
+    <script src="swiper.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-var menuButton = document.querySelector('.menu-button');
-var openMenu = function () {
-  swiper.slidePrev();
-};
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
-  initialSlide: 1,
-  resistanceRatio: 0,
-  slideToClickedSlide: true,
-  on: {
-    slideChangeTransitionStart: function () {
-      var slider = this;
-      if (slider.activeIndex === 0) {
-        menuButton.classList.add('cross');
-        // required because of slideToClickedSlide
-        menuButton.removeEventListener('click', openMenu, true);
-      } else {
-        menuButton.classList.remove('cross');
-      }
-    }
-    , slideChangeTransitionEnd: function () {
-      var slider = this;
-      if (slider.activeIndex === 1) {
-        menuButton.addEventListener('click', openMenu, true);
-      }
-    },
-  }
+    <!-- Initialize Swiper -->
+    <script>
+        var menuButton = document.querySelector('.menu-button');
+        var openMenu = function () {
+            swiper.slidePrev();
+        };
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                slideChangeTransitionStart: function () {
+                  var slider = this;
+                  if (slider.activeIndex === 0) {
+                    menuButton.classList.add('cross');
+    // required because of slideToClickedSlide
+    menuButton.removeEventListener('click', openMenu, true);
+} else {
+    menuButton.classList.remove('cross');
+}
+}
+, slideChangeTransitionEnd: function () {
+  var slider = this;
+  if (slider.activeIndex === 1) {
+    menuButton.addEventListener('click', openMenu, true);
+}
+},
+}
 });
 </script>
-			<section id="home"><a id="home"></a>
-                <svg viewBox="0 0 960 300">
-    <symbol id="s-text">
-        <text text-anchor="middle" x="50%" y="45%">RATAN</text>
-        <text text-anchor="middle" x="50%" y="98%"> COMPUTERS</text>
-    </symbol>
+<section id="home"><a id="home"></a>
+    <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="45%">RATAN</text>
+            <text text-anchor="middle" x="50%" y="98%"> COMPUTERS</text>
+        </symbol>
 
-    <g class = "g-ants">
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-    </g>
-</svg>	
-			
-			</section>
-			
-			<section id="about"><a id="about"></a>
-				<div id="container">
-				<h1>About</h1>
-				<div class="block"></div>
-				</div>
-			</section>
-			
-			<section id="products"><a id="products"></a>
-				<div id="container">
-				<h1>Products</h1>
-				<div class="block"></div>
-				 <div id="wrapper">
-                    <div class="zindex">
-<div class="product1">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product1</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>	
+
+
+    <div class="contain">
+        <div class="stage">
+            <div class="wrapper">
+                <div class="slash"></div>
+                <div class="sides">
+                  <div class="side"></div>
+                  <div class="side"></div>
+                  <div class="side"></div>
+                  <div class="side"></div>
+              </div>
+              <div class="text">
+                  <div class="text--backing">devansh</div>
+                  <div class="text--left">
+                    <div class="inner">devansh</div>
+                </div>
+                <div class="text--right">
+                    <div class="inner">devansh</div>
+                </div>
             </div>
         </div>
     </div>
-</div>   
 </div>
+<!-- partial -->
+<script>
+    const curry = f => (...args) =>
+    args.length >= f.length ?
+    f(...args) :
+    curry(f.bind(f, ...args));
 
-<div class="product2">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
+    const compose = (f, g) => x => f(g(x));
+    const composeN = (...fns) => (...args) =>
+    fns.reverse().
+    reduce((x, f) => f.apply(f, [].concat(x)), args);
+</script>
+<div class="sidescroll">
+    <div id='scroll'></div>
+</div>
+<div class='scroll'></div>
+</section>
+
+<section id="about"><a id="about"></a>
+ <div id="container">
+     <h2>About</h2>
+     <div class="block"></div>
+     <p>Ratan Computers a shop which was the first Computers works shop in<b> Belthra Road </b> in year <b>2000</b> with the efforts of<b> Shiri Ram Ratan Prashad , Mr.Manoj Kumar Verma , Mr.Raj Kumar Maurya</b> and the Staff Workers.</p>
+     <br>
+     <div class="columns">
+        <h3><span class="typcn typcn-device-desktop icon"></span> Our Process</h3>
+        <p>We just have a very simple process to desgine your data and make it aewsome.It is totally dependend on the skills.</p>
+      </div>
+      <div class="columns">
+        <h3><span class="typcn typcn-pen icon"></span> Our Approach</h3>
+          <p>As we work in a remote area , we almost reached at a stage that almost all types of advertisment are desgined by us</p>
+      </div>
+        <div class="columns">
+          <h3><span class="typcn typcn-cog-outline icon"></span> Our Goal</h3>
+          <p>In the starting we have a very small goal that was to only run our shop, But at present time we are giving the best services for the customers.
         </div>
-        <div class="contentBx">
-            <h2>Product2</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
+        <div class="columns">
+          <h3><span class="typcn typcn-lightbulb icon"></span> Our Mission</h3>
+          <p>We have only and only one misssion that is to give best and best services to the customers.
+        </div>
+ </div>
+ <div id="container">
+ <h2>Meet the Team</h2>
+     <div class="block"></div>
+ </div>
+ <div class="testimonial">
+    <div class="card">
+      <div class="layer"></div>
+      <div class="content">
+        <p>
+          
+        </p>
+        <div class="image">
+         <img src="img/1.jpg">
+        </div>
+        <div class="details">
+          <h2>
+            Someone Famous</br>
+            <span>Website Designer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="layer"></div>
+      <div class="content">
+        <p>
+          
+        </p>
+        <div class="image">
+          <img src="img/2.jpg">
+        </div>
+        <div class="details">
+          <h2>
+            Someone Famous</br>
+            <span>Website Designer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="layer"></div>
+      <div class="content">
+        <p>
+          
+        </p>
+        <div class="image">
+         <img src="img/3.jpg">
+        </div>
+        <div class="details">
+          <h2>
+            Someone Famous</br>
+            <span>Website Designer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products"><a id="products"></a>
+ <div id="container">
+     <h2>Products</h2>
+     <div class="block"></div>
+     <div id="wrapper">
+        <div class="zindex">
+            <div class="product1">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product1</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
             </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="product2">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product2</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
             </div>
+
+            <div class="product3">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product3</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product4">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product4</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product5">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product5</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product6">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product6</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product7">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product7</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product8">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product8</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="product9">
+                <div class="container">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="logo.png">    
+                        </div>
+                        <div class="contentBx">
+                            <h2>Product9</h2>
+                            <div class="size">
+                                <h3>Size :</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <div class="color">
+                                <h3>Colour :</h3>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+
         </div>
     </div>
-</div>   
 </div>
+</section>
 
-<div class="product3">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product3</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
+<section id="contact"><a id="contact"></a>
+ <div id="container">
+     <h2>Contact</h2>
+     <div class="block"></div>
+ </div>
+</section>
 
-<div class="product4">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product4</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-<div class="product5">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product5</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-<div class="product6">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product6</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-<div class="product7">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product7</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-<div class="product8">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product8</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-<div class="product9">
-<div class="container">
-    <div class="card">
-        <div class="imgBx">
-            <img src="logo.png">    
-        </div>
-        <div class="contentBx">
-            <h2>Product9</h2>
-            <div class="size">
-                <h3>Size :</h3>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
-            </div>
-            <div class="color">
-                <h3>Colour :</h3>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>   
-</div>
-
-
-</div>
-</div>
-				</div>
-			</section>
-			
-			<section id="contact"><a id="contact"></a>
-				<div id="container">
-				<h1>Contact</h1>
-				<div class="block"></div>
-				</div>
-			</section>
-			
-			<footer>
-				<div id="container">
-				</div>
-			</footer>
+<footer>
+ <div id="container">
+ </div>
+</footer>
 </body>
 </html>
