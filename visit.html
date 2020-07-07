@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visiting Card</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="img/favicon.png" rel="icon">
+</head>
+<body>
+	
+	<div id="container">
+   <h2>Visiting Card Details</h2>
+   <div class="block"></div>
+   <form netlify action="index.html">
+    <h5>Name of Company</h5>
+    <input type="text" name="Name">
+    <h5>Type Of Company</h5>
+    <input type="text" name="Name">
+    <h5>Name Of Propriter/Owner</h5>
+    <input type="text" name="Name">
+    <h5>Address of Company</h5>
+    <input type="text" name="Name">
+    <h5>Contact Number</h5>
+    <input type="text" name="Name">
+    <h5>Other Things to add</h5>
+    <textarea>
+    </textarea><br>
+    <input type="submit" name="Submit" value="Send">
+  </form>
+</div>
+<footer>
+ <div id="container">
+  <div class="social">
+    <a href="mailto:verma0007.dev@gmail.com"><img src="img/mail.png"></a>
+    <a href=""><img src="img/fb.png"></a>
+    <a href=""><img src="img/blog.png"></a>
+    <a href=""><img src="img/insta.png"></a></div>
+    <p class="copyright">&copy; Copyright <strong>Ratan Computers</strong>. All Rights Reserved</p>
+    <div class="credits">
+      With Love Designed by <a href="https://dev-bhai-bltr.netlify.app/">Devansh</a>
+    </div>
+  </div>
+</footer>
+<div id="preloader"></div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script type="text/javascript">
+  (function ($) {
+    'use strict';
+
+  // Preloader
+  $(window).on('load', function () {
+    $('#preloader')
+    .delay(1000)
+    .fadeOut('slow', function () {
+      $(this).remove();
+    });
+  });
+})(window.jQuery);
+</script>
+</body>
+</html>
