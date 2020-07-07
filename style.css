@@ -1139,6 +1139,7 @@ textarea {
 input[type="submit"] {
   display: inline-block;
   height: 38px;
+	width:100%;
   padding: 0 30px;
   color: #fff;
   text-align: center;
