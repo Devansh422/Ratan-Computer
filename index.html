@@ -9,113 +9,113 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
 
-    <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon.png" rel="icon">
   <title>Ratan Computers</title>
 </head>
 
 <body>
 
-    <div id="side">				
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide menu">
-                    <img src="img/favicon.png" class="logo">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="social1">
-    <a href="mailto:verma0007.dev@gmail.com"><img src="img/mail.png"></a>
-    <a href=""><img src="img/fb.png"></a>
-    <a href=""><img src="img/blog.png"></a>
-    <a href=""><img src="img/insta.png"></a></div>
-                </div>
-                <div class="swiper-slide content">
-                    <div class="menu-button">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </div>
+  <div id="side">				
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide menu">
+          <img src="img/favicon.png" class="logo">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="social1">
+            <a href="mailto:verma0007.dev@gmail.com"><img src="img/mail.png"></a>
+            <a href=""><img src="img/fb.png"></a>
+            <a href=""><img src="img/blog.png"></a>
+            <a href=""><img src="img/insta.png"></a></div>
+          </div>
+          <div class="swiper-slide content">
+            <div class="menu-button">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var menuButton = document.querySelector('.menu-button');
-        var openMenu = function () {
-            swiper.slidePrev();
-        };
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            initialSlide: 1,
-            resistanceRatio: 0,
-            slideToClickedSlide: true,
-            on: {
-                slideChangeTransitionStart: function () {
-                  var slider = this;
-                  if (slider.activeIndex === 0) {
-                    menuButton.classList.add('cross');
+      var menuButton = document.querySelector('.menu-button');
+      var openMenu = function () {
+        swiper.slidePrev();
+      };
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        initialSlide: 1,
+        resistanceRatio: 0,
+        slideToClickedSlide: true,
+        on: {
+          slideChangeTransitionStart: function () {
+            var slider = this;
+            if (slider.activeIndex === 0) {
+              menuButton.classList.add('cross');
     // required because of slideToClickedSlide
     menuButton.removeEventListener('click', openMenu, true);
-} else {
+  } else {
     menuButton.classList.remove('cross');
-}
+  }
 }
 , slideChangeTransitionEnd: function () {
   var slider = this;
   if (slider.activeIndex === 1) {
     menuButton.addEventListener('click', openMenu, true);
-}
+  }
 },
 }
 });
 </script>
 <section id="home"><a id="home"></a>
-    <svg viewBox="0 0 960 300">
-        <symbol id="s-text">
-            <text text-anchor="middle" x="50%" y="45%">RATAN</text>
-            <text text-anchor="middle" x="50%" y="98%"> COMPUTERS</text>
-        </symbol>
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="45%">RATAN</text>
+      <text text-anchor="middle" x="50%" y="98%"> COMPUTERS</text>
+    </symbol>
 
-        <g class = "g-ants">
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-        </g>
-    </svg>	
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>	
 
 
-    <div class="contain">
-        <div class="stage">
-            <div class="wrapper">
-                <div class="slash"></div>
-                <div class="sides">
-                  <div class="side"></div>
-                  <div class="side"></div>
-                  <div class="side"></div>
-                  <div class="side"></div>
-              </div>
-              <div class="text">
-                  <div class="text--backing">devansh</div>
-                  <div class="text--left">
-                    <div class="inner">devansh</div>
-                </div>
-                <div class="text--right">
-                    <div class="inner">devansh</div>
-                </div>
-            </div>
+  <div class="contain">
+    <div class="stage">
+      <div class="wrapper">
+        <div class="slash"></div>
+        <div class="sides">
+          <div class="side"></div>
+          <div class="side"></div>
+          <div class="side"></div>
+          <div class="side"></div>
         </div>
+        <div class="text">
+          <div class="text--backing">devansh</div>
+          <div class="text--left">
+            <div class="inner">devansh</div>
+          </div>
+          <div class="text--right">
+            <div class="inner">devansh</div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<!-- partial -->
-<script>
+  </div>
+  <!-- partial -->
+  <script>
     const curry = f => (...args) =>
     args.length >= f.length ?
     f(...args) :
@@ -125,317 +125,344 @@
     const composeN = (...fns) => (...args) =>
     fns.reverse().
     reduce((x, f) => f.apply(f, [].concat(x)), args);
-</script>
-<div class="sidescroll">
+  </script>
+  <div class="sidescroll">
     <div id='scroll'></div>
-</div>
-<div class='scroll'></div>
+  </div>
+  <div class='scroll'></div>
 </section>
 
 <section id="about"><a id="about"></a>
  <div id="container">
-     <h2>About</h2>
-     <div class="block"></div>
-     <p>Ratan Computers a shop which was the first Computers works shop in<b> Belthra Road </b> in year <b>2000</b> with the efforts of<b> Shiri Ram Ratan Prashad , Mr.Manoj Kumar Verma , Mr.Raj Kumar Maurya</b> and the Staff Workers.</p>
-     <br>
-     <div class="columns">
-        <h3><span class="typcn typcn-device-desktop icon"></span> Our Process</h3>
-        <p>We just have a very simple process to desgine your data and make it aewsome.It is totally dependend on the skills.</p>
+   <h2>About</h2>
+   <div class="block"></div>
+   <p>Ratan Computers a shop which was the first Computers works shop in<b> Belthra Road </b> in year <b>2000</b> with the efforts of<b> Shiri Ram Ratan Prashad , Mr.Manoj Kumar Verma , Mr.Raj Kumar Maurya</b> and the Staff Workers.</p>
+   <br>
+   <div class="columns">
+    <h3><span class="typcn typcn-device-desktop icon"></span> Our Process</h3>
+    <p>We just have a very simple process to desgine your data and make it aewsome.It is totally dependend on the skills.</p>
+  </div>
+  <div class="columns">
+    <h3><span class="typcn typcn-pen icon"></span> Our Approach</h3>
+    <p>As we work in a remote area , we almost reached at a stage that almost all types of advertisment are desgined by us</p>
+  </div>
+  <div class="columns">
+    <h3><span class="typcn typcn-cog-outline icon"></span> Our Goal</h3>
+    <p>In the starting we have a very small goal that was to only run our shop, But at present time we are giving the best services for the customers.
+    </div>
+    <div class="columns">
+      <h3><span class="typcn typcn-lightbulb icon"></span> Our Mission</h3>
+      <p>We have only and only one misssion that is to give best and best services to the customers.
       </div>
-      <div class="columns">
-        <h3><span class="typcn typcn-pen icon"></span> Our Approach</h3>
-          <p>As we work in a remote area , we almost reached at a stage that almost all types of advertisment are desgined by us</p>
-      </div>
-        <div class="columns">
-          <h3><span class="typcn typcn-cog-outline icon"></span> Our Goal</h3>
-          <p>In the starting we have a very small goal that was to only run our shop, But at present time we are giving the best services for the customers.
-        </div>
-        <div class="columns">
-          <h3><span class="typcn typcn-lightbulb icon"></span> Our Mission</h3>
-          <p>We have only and only one misssion that is to give best and best services to the customers.
-        </div>
- </div>
- <div id="container">
- <h2>Meet the Team</h2>
+    </div>
+    <div id="container">
+     <h2>Meet the Team</h2>
      <div class="block"></div>
- </div>
- <div class="testimonial">
+   </div>
+   <div class="testimonial">
     <div class="card">
       <div class="layer"></div>
       <div class="content">
         <p>
-          
+
         </p>
         <div class="image">
          <img src="img/1.jpg">
-        </div>
-        <div class="details">
-          <h2>
-            Shri Ram Ratan Prasad</br>
-            <span>Cheif Director</span>
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>
-          
-        </p>
-        <div class="image">
-          <img src="img/2.jpg">
-        </div>
-        <div class="details">
-          <h2>
-            Mr. Manoj Kumar Verma</br>
-            <span>Director</span>
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>
-          
-        </p>
-        <div class="image">
-         <img src="img/3.jpg">
-        </div>
-        <div class="details">
-          <h2>
-            Mr. rajkumar Maurya</br>
-            <span>Designer</span>
-          </h2>
-        </div>
-      </div>
+       </div>
+       <div class="details">
+        <h2>
+        Shri Ram Ratan Prasad</br>
+        <span>Cheif Director</span>
+      </h2>
     </div>
   </div>
+</div>
+<div class="card">
+  <div class="layer"></div>
+  <div class="content">
+    <p>
+
+    </p>
+    <div class="image">
+      <img src="img/2.jpg">
+    </div>
+    <div class="details">
+      <h2>
+      Mr. Manoj Kumar Verma</br>
+      <span>Director</span>
+    </h2>
+  </div>
+</div>
+</div>
+<div class="card">
+  <div class="layer"></div>
+  <div class="content">
+    <p>
+
+    </p>
+    <div class="image">
+     <img src="img/3.jpg">
+   </div>
+   <div class="details">
+    <h2>
+    Mr. Rajkumar Maurya</br>
+    <span>Designer</span>
+  </h2>
+</div>
+</div>
+</div>
+</div>
+
+<div id="container">
+ <h2>Our Works</h2>
+ <div class="block"></div>
+ <p>We can Help you in diffrent Ways:The are by making the follows</p>
+ <div class="workcnt">
+  <a href="">
+  <div class="work" id="wrk1">
+     <div class="label">
+       <span>Visiting Cards</span>
+     </div>
+   </div>
+ </a>
+   <div class="work" id="wrk2">
+     <div class="label">
+       <span>Wedding Cards</span>
+     </div>
+   </div>
+   <div class="work" id="wrk3">
+     <div class="label">
+       <span>Offset Printing</span>
+     </div>
+   </div>
+ </div>
+</div>
+
+
 </section>
 
 <section id="products"><a id="products"></a>
  <div id="container">
-     <h2>Products</h2>
-     <div class="block"></div>
+   <h2>Products</h2>
+   <div class="block"></div>
  </div>
-     <div id="wrapper">
-        <div class="zindex">
-            <div class="product1">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p1.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Century Green</h2>
-                            <div class="size">
-                                <h3>Size :</h3>
-                                <span>A4</span>
-                                <span>A3</span>
-                                <span>FS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+ <div id="wrapper">
+  <div class="zindex">
+    <div class="product1">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p1.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Century Green</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>A4</span>
+              <span>A3</span>
+              <span>FS</span>
             </div>
-
-            <div class="product2">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p2.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Century Star</h2>
-                            <div class="size">
-                                <h3>Size :</h3>
-                                <span>A4</span>
-                                <span>A3</span>
-                                <span>FS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product3">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p3.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Folders</h2>
-                            <div class="size">
-                                <h3>Size :</h3>
-                                <span>A4</span>
-                                <span>FS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product4">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p4.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Envelope</h2>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product5">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p5.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Pens</h2>
-                            <div class="size">
-                                <h3>Type :</h3>
-                                <span>Dot</span>
-                                <span>Ball</span>
-                                <span>Gel</span>
-                            </div>
-                            <div class="color">
-                                <h3>Colour :</h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product6">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p6.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Stamps</h2>
-                            <div class="size">
-                                <h3>Size :</h3>
-                                <span>All</span>
-                            </div>
-                            <div class="color">
-                                <h3>Colour :</h3>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product7">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p7.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Printer Ink</h2>
-                            <div class="color">
-                                <h3>Colour :</h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product8">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p8.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Printer Toner</h2>
-                            <div class="size">
-                                <h3>Size :</h3>
-                                <span>1L</span>
-                                <span>2L</span>
-                                <span>5L</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
-            <div class="product9">
-                <div class="container">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/p9.png">    
-                        </div>
-                        <div class="contentBx">
-                            <h2>Id Cards</h2>
-                        </div>
-                    </div>
-                </div>   
-            </div>
+          </div>
         </div>
+      </div>   
     </div>
+
+    <div class="product2">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p2.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Century Star</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>A4</span>
+              <span>A3</span>
+              <span>FS</span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product3">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p3.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Folders</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>A4</span>
+              <span>FS</span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product4">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p4.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Envelope</h2>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product5">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p5.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Pens</h2>
+            <div class="size">
+              <h3>Type :</h3>
+              <span>Dot</span>
+              <span>Ball</span>
+              <span>Gel</span>
+            </div>
+            <div class="color">
+              <h3>Colour :</h3>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product6">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p6.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Stamps</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>All</span>
+            </div>
+            <div class="color">
+              <h3>Colour :</h3>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product7">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p7.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Printer Ink</h2>
+            <div class="color">
+              <h3>Colour :</h3>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product8">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p8.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Printer Toner</h2>
+            <div class="size">
+              <h3>Size :</h3>
+              <span>1L</span>
+              <span>2L</span>
+              <span>5L</span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="product9">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/p9.png">    
+          </div>
+          <div class="contentBx">
+            <h2>Id Cards</h2>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="contact"><a id="contact"></a>
  <div id="container">
-     <h2>Contact</h2>
-     <div class="block"></div>
-     <form netlify>
-        <h5>Name</h5>
-         <input type="text" name="Name">
-         <h5>Email</h5>
-         <input type="email" name="Email">
-         <h5>Message</h5>
-         <textarea>
-         </textarea><br>
-         <input type="submit" name="Submit" value="Send">
-     </form>
- </div>
+   <h2>Contact</h2>
+   <div class="block"></div>
+   <form netlify>
+    <h5>Name</h5>
+    <input type="text" name="Name">
+    <h5>Email</h5>
+    <input type="email" name="Email">
+    <h5>Message</h5>
+    <textarea>
+    </textarea><br>
+    <input type="submit" name="Submit" value="Send">
+  </form>
+</div>
 </section>
 
 <footer>
  <div id="container">
-    <div class="social">
+  <div class="social">
     <a href="mailto:verma0007.dev@gmail.com"><img src="img/mail.png"></a>
     <a href=""><img src="img/fb.png"></a>
     <a href=""><img src="img/blog.png"></a>
     <a href=""><img src="img/insta.png"></a></div>
-     <p class="copyright">&copy; Copyright <strong>Ratan Computers</strong>. All Rights Reserved</p>
-              <div class="credits">
-                With Love Designed by <a href="https://dev-bhai-bltr.netlify.app/">Devansh</a>
-              </div>
- </div>
+    <p class="copyright">&copy; Copyright <strong>Ratan Computers</strong>. All Rights Reserved</p>
+    <div class="credits">
+      With Love Designed by <a href="https://dev-bhai-bltr.netlify.app/">Devansh</a>
+    </div>
+  </div>
 </footer>
 
 
 <div id="preloader"></div>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script type="text/javascript">
-    (function ($) {
-  'use strict';
+  (function ($) {
+    'use strict';
 
   // Preloader
   $(window).on('load', function () {
     $('#preloader')
-      .delay(1000)
-      .fadeOut('slow', function () {
-        $(this).remove();
-      });
+    .delay(1000)
+    .fadeOut('slow', function () {
+      $(this).remove();
+    });
   });
 })(window.jQuery);
 </script>
