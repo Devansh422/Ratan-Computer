@@ -136,7 +136,7 @@ body{
 }
 @media(max-width: 768px){
   .swiper-container{
-    width: 40vh;
+    width: 20em;
   }
   .swiper-slide {
     font-size: 15px;
