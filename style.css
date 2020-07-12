@@ -136,7 +136,7 @@ body{
 }
 @media(max-width: 768px){
   .swiper-container{
-    width: 20em;
+    width: 20vh;
   }
   .swiper-slide {
     font-size: 15px;
@@ -149,6 +149,46 @@ body{
     height: 3px;
     margin: 4px auto;
   }
+	.menu-button:hover .bar:nth-of-type(1) {
+  -webkit-transform: translateY(1.5px) rotate(-4deg);
+  -ms-transform: translateY(1.5px) rotate(-4deg);
+  transform: translateY(1.5px) rotate(-4deg);
+}
+.menu-button:hover .bar:nth-of-type(2) {
+  opacity: .9;
+}
+.menu-button:hover .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-1.5px) rotate(4deg);
+  -ms-transform: translateY(-1.5px) rotate(4deg);
+  transform: translateY(-1.5px) rotate(4deg);
+}
+
+.cross .bar:nth-of-type(1) {
+  -webkit-transform: translateY(15px) rotate(-45deg);
+  -ms-transform: translateY(15px) rotate(-45deg);
+  transform: translateY(8px) rotate(-45deg);
+}
+.cross .bar:nth-of-type(2) {
+  opacity: 0;
+}
+.cross .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-15px) rotate(40deg);
+  -ms-transform: translateY(-15px) rotate(40deg);
+  transform: translateY(-15px) rotate(40deg);
+}
+.cross:hover .bar:nth-of-type(1) {
+  -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+  -ms-transform: translateY(13.5px) rotate(-40.5deg);
+  transform: translateY(13.5px) rotate(-40.5deg);
+}
+.cross:hover .bar:nth-of-type(2) {
+  opacity: .1;
+}
+.cross:hover .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+  -ms-transform: translateY(-13.5px) rotate(40.5deg);
+  transform: translateY(-13.5px) rotate(40.5deg);
+}
 }
 ul{
   display:block;
@@ -220,7 +260,7 @@ p{
   font-size: 20px;
 }
 #container{
-  padding: 50px 100px;
+  padding: 50px 20px;
 }
 ul li{
   margin-left: -35px;
@@ -1170,7 +1210,31 @@ footer .social{
   width: 50px;
   padding: 10px 30%;
 }
-
+@media (max-width: 768px){
+  footer .social img{
+  height: 25px;
+  width: 25px;
+  padding: 10px 20px;
+}
+  footer .social{
+  display: inline-flex;
+  float: right;
+}
+.social1{
+  display:block; 
+}
+.social1 img{
+  height: 30px;
+  width: 30px;
+  padding: 10px 30%;
+}
+footer p{
+  text-align: center;
+}
+footer .credits{
+  text-align: center;
+}
+}
 #preloader {
   position: fixed;
   top: 0;
@@ -1264,4 +1328,23 @@ footer .social{
   background-image: url("img/w3.jpg");
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 768px){
+  .label{
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  background:#232323;
+}
+.label span{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  letter-spacing: 3px;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color:#fff;
+}
 }
